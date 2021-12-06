@@ -1,3 +1,6 @@
+// const obj1 = {};
+// const obj2 = new Object();
+
 // function print(person){
 //   console.log(person.name);
 //   console.log(person.age);
