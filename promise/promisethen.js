@@ -61,37 +61,38 @@
 
 //
 
-function a(number) {
-  return new Promise((resolve, reject) => {
-    if(number > 4) {
-      reject();
-      return
-    }
-    setTimeout(() => {
-      console.log('A');
-      resolve();
-    }, 1000)
-  })
-}
 
-async function test() {
-  // a(5)
-  // .then(() => {
-  //   console.log('resolve!');
-  // })
-  // .catch(() => {
-  //   console.log('reject!');
-  // }).finally(() => {
-  //   console.log('done');
-  // })
-  try {
-    await a(3)
-    console.log('resolve!');
-  } catch (error) {
-    console.log('reject!');
-  } finally {
-    console.log('done');
-  }
+// function a(number) {
+//   return new Promise((resolve, reject) => {
+//     if(number > 4) {
+//       reject();
+//       return
+//     }
+//     setTimeout(() => {
+//       console.log('A');
+//       resolve();
+//     }, 1000)
+//   })
+// }
+
+// async function test() {
+//   // a(5)
+//   // .then(() => {
+//   //   console.log('resolve!');
+//   // })
+//   // .catch(() => {
+//   //   console.log('reject!');
+//   // }).finally(() => {
+//   //   console.log('done');
+//   // })
+//   try {
+//     await a(3)
+//     console.log('resolve!');
+//   } catch (error) {
+//     console.log('reject!');
+//   } finally {
+//     console.log('done');
+//   }
   
-}
-test();
+// }
+// test();
