@@ -32,21 +32,21 @@
 // }
 
 // {
-//     class Student {
-//     constructor(name, age, enrolled, score) {
-//       this.name = name;
-//       this.age = age;
-//       this.enrolled = enrolled;
-//       this.score = score;
-//     }
-//   }
-//   const students = [
-//     new Student('A', 29, true, 45),
-//     new Student('B', 28, false, 80),
-//     new Student('C', 30, true, 90),
-//     new Student('D', 40, false, 66),
-//     new Student('E', 18, true, 88),
-//   ]
+    class Student {
+    constructor(name, age, enrolled, score) {
+      this.name = name;
+      this.age = age;
+      this.enrolled = enrolled;
+      this.score = score;
+    }
+  }
+  const students = [
+    new Student('A', 29, true, 45),
+    new Student('B', 28, false, 80),
+    new Student('C', 30, true, 90),
+    new Student('D', 40, false, 66),
+    new Student('E', 18, true, 88),
+  ]
   
   // 점수가 90점인 학생 찾기
   // {
@@ -86,12 +86,12 @@
   // }
 
   // 학생들의 평균 점수구하기 (reduce 배열 하나하나를 돌면 서 값을 누적할 때 사용)
-  // {
-  //   const result = students.reduce((prev, curr) =>
-  //      prev + curr.score, 0
-  //      );
-  //   console.log(result/5);
-  // } 
+  {
+    const result = students.reduce((prev, curr) =>
+       prev + curr.score, 0
+       );
+    console.log(result/5);
+  } 
 
   // 학생들의 모든 점수를 문자열로 변환
   // {
